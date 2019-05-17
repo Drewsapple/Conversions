@@ -1,0 +1,86 @@
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <!-- Compiled and minified CSS and JS for Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <H3 class="title">Unit Conversions</H3>
+    <div class="row" id="length">
+        <H4>Length</H4>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col">
+                    <input id="ft" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromFT()"></input>
+                    <label for="ft">Feet</label>
+                </div>
+                <div class="input-field col">
+                    <input id="mm" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromMM()"></input>
+                    <label for="mm">Millimeters</label>
+                </div>
+                <div class="input-field col">
+                    <input id="m" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromM()"></input>
+                    <label for="m">Meters</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row" id="speed">
+        <H4>Speed</H4>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col">
+                    <input id="mph" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromMph()"></input>
+                    <label for="mph">Miles/Hour</label>
+                </div>
+                <div class="input-field col">
+                    <input id="kph" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromKph()"></input>
+                    <label for="kph">Kilometers/Hour</label>
+                </div>
+                <div class="input-field col">
+                    <input id="knots" type="number" step="0.01" class="validate"
+                        onkeyup="updateSpeedFromKnots()"></input>
+                    <label for="knots">Knots</label>
+                </div>
+                <div class="input-field col">
+                    <input id="mps" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromMps()"></input>
+                    <label for="mps">Meters/Second</label>
+                </div>
+                <div class="input-field col">
+                    <input id="fps" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromFps()"></input>
+                    <label for="fps">Feet/Second</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row" id="weight">
+        <H4>Weight</H4>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col">
+                    <input id="lbs" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromLbs()"></input>
+                    <label for="lbs">Pounds</label>
+                </div>
+                <div class="input-field col">
+                    <input id="kg" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromKg()"></input>
+                    <label for="kg">Kilograms</label>
+                </div>
+                <div class="input-field col">
+                    <input id="oz" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromOz()"></input>
+                    <label for="oz">Ounces</label>
+                </div>
+                <div class="input-field col">
+                    <input id="g" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromG()"></input>
+                    <label for="g">Grams</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
