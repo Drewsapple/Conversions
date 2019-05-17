@@ -1,3 +1,31 @@
 .title {
     text-align: center;
+    font-size: 2rem;
+}
+
+.sectionTitle {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.short {
+    height: 2.5rem !important;
+    padding: .25 rem !important;
+}
+
+.row {
+    margin-bottom: 0rem;
+}
+
+/* To hide up/down buttons for number fields */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }

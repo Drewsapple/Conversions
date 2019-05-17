@@ -1,82 +1,82 @@
 <head>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-
     <!-- Compiled and minified CSS and JS for Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <H3 class="title">Unit Conversions</H3>
+    <div class="divider"></div>
     <div class="row" id="length">
-        <H4>Length</H4>
+        <H4 class="sectionTitle">Length</H4>
         <form class="col s12">
             <div class="row">
                 <div class="input-field col">
-                    <input id="ft" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromFT()"></input>
+                    <input id="ft" type="number" step="0.01" class="validate short" onkeyup="updateLengthsFromFT()"></input>
                     <label for="ft">Feet</label>
                 </div>
                 <div class="input-field col">
-                    <input id="mm" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromMM()"></input>
+                    <input id="mm" type="number" step="0.01" class="validate short" onkeyup="updateLengthsFromMM()"></input>
                     <label for="mm">Millimeters</label>
                 </div>
                 <div class="input-field col">
-                    <input id="m" type="number" step="0.01" class="validate" onkeyup="updateLengthsFromM()"></input>
+                    <input id="m" type="number" step="0.01" class="validate short" onkeyup="updateLengthsFromM()"></input>
                     <label for="m">Meters</label>
                 </div>
             </div>
         </form>
     </div>
+    <div class="divider"></div>
     <div class="row" id="speed">
-        <H4>Speed</H4>
+        <H4 class="sectionTitle">Speed</H4>
         <form class="col s12">
             <div class="row">
                 <div class="input-field col">
-                    <input id="mph" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromMph()"></input>
+                    <input id="mph" type="number" step="0.01" class="validate short" onkeyup="updateSpeedFromMph()"></input>
                     <label for="mph">Miles/Hour</label>
                 </div>
                 <div class="input-field col">
-                    <input id="kph" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromKph()"></input>
+                    <input id="kph" type="number" step="0.01" class="validate short" onkeyup="updateSpeedFromKph()"></input>
                     <label for="kph">Kilometers/Hour</label>
                 </div>
                 <div class="input-field col">
-                    <input id="knots" type="number" step="0.01" class="validate"
+                    <input id="knots" type="number" step="0.01" class="validate short"
                         onkeyup="updateSpeedFromKnots()"></input>
                     <label for="knots">Knots</label>
                 </div>
                 <div class="input-field col">
-                    <input id="mps" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromMps()"></input>
+                    <input id="mps" type="number" step="0.01" class="validate short" onkeyup="updateSpeedFromMps()"></input>
                     <label for="mps">Meters/Second</label>
                 </div>
                 <div class="input-field col">
-                    <input id="fps" type="number" step="0.01" class="validate" onkeyup="updateSpeedFromFps()"></input>
+                    <input id="fps" type="number" step="0.01" class="validate short" onkeyup="updateSpeedFromFps()"></input>
                     <label for="fps">Feet/Second</label>
                 </div>
             </div>
         </form>
     </div>
-
+    <div class="divider"></div>
     <div class="row" id="weight">
-        <H4>Weight</H4>
+        <H4 class="sectionTitle">Weight</H4>
         <form class="col s12">
             <div class="row">
                 <div class="input-field col">
-                    <input id="lbs" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromLbs()"></input>
+                    <input id="lbs" type="number" step="0.01" class="validate short" onkeyup="updateWeightsFromLbs()"></input>
                     <label for="lbs">Pounds</label>
                 </div>
                 <div class="input-field col">
-                    <input id="kg" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromKg()"></input>
+                    <input id="kg" type="number" step="0.01" class="validate short" onkeyup="updateWeightsFromKg()"></input>
                     <label for="kg">Kilograms</label>
                 </div>
                 <div class="input-field col">
-                    <input id="oz" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromOz()"></input>
+                    <input id="oz" type="number" step="0.01" class="validate short" onkeyup="updateWeightsFromOz()"></input>
                     <label for="oz">Ounces</label>
                 </div>
                 <div class="input-field col">
-                    <input id="g" type="number" step="0.01" class="validate" onkeyup="updateWeightsFromG()"></input>
+                    <input id="g" type="number" step="0.01" class="validate short" onkeyup="updateWeightsFromG()"></input>
                     <label for="g">Grams</label>
                 </div>
             </div>
