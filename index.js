@@ -2,6 +2,7 @@ function updateLengthsFromFT() {
     var x = parseFloat(document.getElementById("ft").value);
     document.getElementById("mm").value = Math.round(x / 0.0328084) * 10;
     document.getElementById("m").value = Math.round(x / 3.28084 * 100) / 100;
+    document.getElementById("in").value = Math.round(x * 12 * 10) / 10;
     M.updateTextFields();
 }
 
@@ -9,6 +10,7 @@ function updateLengthsFromMM() {
     var x = parseFloat(document.getElementById("mm").value);
     document.getElementById("ft").value = Math.round(x * 0.00328084 * 100) / 100;
     document.getElementById("m").value = Math.round(x / 1000 * 100) / 100;
+    document.getElementById("in").value = Math.round(x * 0.00328084 * 12 * 10) / 10;
     M.updateTextFields();
 }
 
@@ -16,6 +18,15 @@ function updateLengthsFromM() {
     var x = parseFloat(document.getElementById("m").value);
     document.getElementById("ft").value = Math.round(x * 3.28084 * 100) / 100;
     document.getElementById("mm").value = Math.round(x * 1000 / 10) * 10;
+    document.getElementById("in").value = Math.round(x * 3.28084 * 12 * 10) / 10;
+    M.updateTextFields();
+}
+
+function updateLengthsFromIN() {
+    var x = parseFloat(document.getElementById("in").value) / 12;
+    document.getElementById("ft").value = Math.round(x * 100) / 100;
+    document.getElementById("mm").value = Math.round(x / 0.0328084) * 10;
+    document.getElementById("m").value = Math.round(x / 3.28084 * 100) / 100;
     M.updateTextFields();
 }
 
