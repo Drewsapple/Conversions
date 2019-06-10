@@ -78,7 +78,7 @@ function updateSpeedFromFps() {
 function updateWeightsFromLbs() {
     var x = parseFloat(document.getElementById("lbs").value);
     document.getElementById("kg").value = Math.round(x / 2.204623 * 100) / 100;
-    document.getElementById("oz").value = Math.round(x / 16 * 10) / 10;
+    document.getElementById("oz").value = Math.round(x * 16 * 10) / 10;
     document.getElementById("g").value = Math.round(x / 2.204623 * 100) * 10;
     M.updateTextFields();
 }
