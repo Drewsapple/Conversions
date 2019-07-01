@@ -109,7 +109,7 @@ function updateWeightsFromG() {
 
 function updateTemperatureFromDegC() {
     var x = parseFloat(document.getElementById("degC").value);
-    document.getElementById("degF").value = Math.round((x / 5 * 9 * 10) + 32) / 10;
+    document.getElementById("degF").value = Math.round(x / 5 * 9 * 10) / 10 + 32;
     M.updateTextFields();
 }
 
