@@ -86,5 +86,21 @@
             </div>
         </form>
     </div>
+    <div class="divider"></div>
+    <div class="row" id="temperature">
+        <H4 class="sectionTitle">Temperature</H4>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col">
+                    <input id="degC" type="number" step="0.01" class="validate short" oninput="updateTemperatureFromDegC()"></input>
+                    <label for="degC">°C</label>
+                </div>
+                <div class="input-field col">
+                    <input id="degF" type="number" step="0.01" class="validate short" oninput="updateTemperatureFromDegF()"></input>
+                    <label for="degF">°F</label>
+                </div>
+            </div>
+        </form>
+    </div>
 
 </body>
