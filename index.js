@@ -106,3 +106,15 @@ function updateWeightsFromG() {
     document.getElementById("oz").value = Math.round(x / 1000 * 2.204623 * 16 * 10) / 10;
     M.updateTextFields();
 }
+
+function updateTemperatureFromDegC() {
+    var x = parseFloat(document.getElementById("degC").value);
+    document.getElementById("degF").value = Math.round((x / 5 * 9 * 10) + 32) / 10;
+    M.updateTextFields();
+}
+
+function updateTemperatureFromDegF() {
+    var x = parseFloat(document.getElementById("degF").value);
+    document.getElementById("degC").value = Math.round((x - 32)/ 9 * 5 * 10) / 10;
+    M.updateTextFields();
+}
